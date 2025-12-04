@@ -148,7 +148,7 @@
 "></script>
     <script>
 
-        const apiUrl = 'http://localhost:3000/api/students'
+        const apiUrl = 'https://student-data-api-2jng.onrender.com/api/students'
         let currentPage =  1
         let currrentSearch = ''
 
@@ -177,7 +177,7 @@
             data.students.forEach(student => {
                 tbody.innerHTML += `
                 <tr class='align-middle'>
-                    <td><img src="http://localhost:3000/uploads/${student.profile_pic}" width="50" height='50' class='rounded-5' /></td>
+                    <td><img src="https://student-data-api-2jng.onrender.com/uploads/${student.profile_pic}" width="50" height='50' class='rounded-5' /></td>
                     <td>${student.first_name}</td>
                     <td>${student.last_name}</td>
                     <td>${student.email}</td>
@@ -247,7 +247,7 @@
             const student = await res.json()
             console.log(student)
 
-            document.querySelector('#view_student_img').src = `http://localhost:3000/uploads/${student.profile_pic}`
+            document.querySelector('#view_student_img').src = `https://student-data-api-2jng.onrender.com/uploads/${student.profile_pic}`
             document.querySelector('#viewName').innerHTML = `${student.first_name} ${student.last_name}`
             document.querySelector('#viewEmail').innerHTML = `${student.email}`
             document.querySelector('#viewPhone').innerHTML = `${student.phone}`

@@ -1,4 +1,4 @@
-const user_api = 'http://localhost:3000/api/users'
+const user_api = 'https://student-data-api-2jng.onrender.com/api/users'
 
 const loginForm = document.querySelector('#loginForm')
 const registerForm = document.querySelector('#registerForm')
