@@ -21,7 +21,7 @@ if (registerForm) {
         const data = await res.json()
         if (res.ok) {
             alert('Registeration successfully. You can login now.')
-            window.location.href = 'https://ishu-zx.github.io/student-data-frontend/index.html'
+            window.location.href = 'https://ishu-zx.github.io/student-data-frontend'
         } else {
             alert(data.message || 'Registeration Failed.')
         }
