@@ -21,7 +21,7 @@ if (registerForm) {
         const data = await res.json()
         if (res.ok) {
             alert('Registeration successfully. You can login now.')
-            window.location.href = '/index.html'
+            window.location.href = 'index.html'
         } else {
             alert(data.message || 'Registeration Failed.')
         }
